@@ -110,6 +110,34 @@ this.ScenarioInitialize(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "FizzBuzzLibTests")]
+        public virtual void 呼叫GetResult方法並傳入3()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入3", null, ((string[])(null)));
+#line 12
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 13
+ testRunner.Given("陣列長度輸入 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
+#line 14
+ testRunner.When("呼叫GetResult方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "當");
+#line hidden
+            TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                        "value"});
+            table2.AddRow(new string[] {
+                        "1"});
+            table2.AddRow(new string[] {
+                        "2"});
+            table2.AddRow(new string[] {
+                        "Fizz"});
+#line 15
+ testRunner.Then("結果為", ((string)(null)), table2, "那麼");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

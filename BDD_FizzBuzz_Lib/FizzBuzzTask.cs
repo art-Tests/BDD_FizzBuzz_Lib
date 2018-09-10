@@ -9,19 +9,21 @@ namespace BDD_FizzBuzz_Lib
             var result = new string[length];
             for (int i = 0; i < length; i++)
             {
+                var tmp = string.Empty;
                 var currectNumber = i + 1;
                 if (currectNumber % 3 == 0)
                 {
-                    result[i] = "Fizz";
+                    tmp = "Fizz";
                 }
-                else if (currectNumber % 5 == 0)
+                if (currectNumber % 5 == 0)
                 {
-                    result[i] = "Buzz";
+                    tmp += "Buzz";
                 }
-                else
+                if (tmp == string.Empty)
                 {
-                    result[i] = currectNumber.ToString();
+                    tmp = currectNumber.ToString();
                 }
+                result[i] = tmp;
             }
             return result;
         }

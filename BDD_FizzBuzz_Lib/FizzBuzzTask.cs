@@ -6,7 +6,7 @@ namespace BDD_FizzBuzz_Lib
     {
         public IList<string> GetResult(int length)
         {
-            return new[] { "" };
+            return new[] { "1" };
         }
     }
 }

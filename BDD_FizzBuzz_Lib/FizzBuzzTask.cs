@@ -14,6 +14,10 @@ namespace BDD_FizzBuzz_Lib
                 {
                     result[i] = "Fizz";
                 }
+                else if (currectNumber % 5 == 0)
+                {
+                    result[i] = "Buzz";
+                }
                 else
                 {
                     result[i] = currectNumber.ToString();

@@ -88,40 +88,38 @@ namespace BDD_FizzBuzz_Lib_Tests.Scenario
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入1")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入0，結果應為空集合")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "FizzBuzzLibTests")]
-        public virtual void 呼叫GetResult方法並傳入1()
+        public virtual void 呼叫GetResult方法並傳入0結果應為空集合()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入1", null, ((string[])(null)));
-#line 5
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入0，結果應為空集合", null, ((string[])(null)));
+#line 6
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 6
- testRunner.Given("陣列長度輸入 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
 #line 7
+ testRunner.Given("陣列長度輸入 0", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
+#line 8
  testRunner.When("呼叫GetResult方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "當");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
                         "value"});
-            table1.AddRow(new string[] {
-                        "1"});
-#line 8
+#line 9
  testRunner.Then("結果為", ((string)(null)), table1, "那麼");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入3")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入2，結果應為長度2的字串集合")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "FizzBuzzLibTests")]
-        public virtual void 呼叫GetResult方法並傳入3()
+        public virtual void 呼叫GetResult方法並傳入2結果應為長度2的字串集合()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入3", null, ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入2，結果應為長度2的字串集合", null, ((string[])(null)));
 #line 12
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 13
- testRunner.Given("陣列長度輸入 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
+ testRunner.Given("陣列長度輸入 2", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
 #line 14
  testRunner.When("呼叫GetResult方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "當");
 #line hidden
@@ -131,8 +129,6 @@ this.ScenarioInitialize(scenarioInfo);
                         "1"});
             table2.AddRow(new string[] {
                         "2"});
-            table2.AddRow(new string[] {
-                        "Fizz"});
 #line 15
  testRunner.Then("結果為", ((string)(null)), table2, "那麼");
 #line hidden
@@ -140,17 +136,17 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入5")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入3，結果應為長度3的字串集合，且三的倍數應為Fizz")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "FizzBuzzLibTests")]
-        public virtual void 呼叫GetResult方法並傳入5()
+        public virtual void 呼叫GetResult方法並傳入3結果應為長度3的字串集合且三的倍數應為Fizz()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入5", null, ((string[])(null)));
-#line 21
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入3，結果應為長度3的字串集合，且三的倍數應為Fizz", null, ((string[])(null)));
+#line 20
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
+#line 21
+ testRunner.Given("陣列長度輸入 3", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
 #line 22
- testRunner.Given("陣列長度輸入 5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
-#line 23
  testRunner.When("呼叫GetResult方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "當");
 #line hidden
             TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -161,28 +157,24 @@ this.ScenarioInitialize(scenarioInfo);
                         "2"});
             table3.AddRow(new string[] {
                         "Fizz"});
-            table3.AddRow(new string[] {
-                        "4"});
-            table3.AddRow(new string[] {
-                        "Buzz"});
-#line 24
+#line 23
  testRunner.Then("結果為", ((string)(null)), table3, "那麼");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入15")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入5，結果應為長度5的字串集合，且三的倍數應為Fizz，五的倍數應為Buzz")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "FizzBuzzLibTests")]
-        public virtual void 呼叫GetResult方法並傳入15()
+        public virtual void 呼叫GetResult方法並傳入5結果應為長度5的字串集合且三的倍數應為Fizz五的倍數應為Buzz()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入15", null, ((string[])(null)));
-#line 32
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入5，結果應為長度5的字串集合，且三的倍數應為Fizz，五的倍數應為Buzz", null, ((string[])(null)));
+#line 29
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 33
- testRunner.Given("陣列長度輸入 15", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
-#line 34
+#line 30
+ testRunner.Given("陣列長度輸入 5", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
+#line 31
  testRunner.When("呼叫GetResult方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "當");
 #line hidden
             TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
@@ -197,28 +189,60 @@ this.ScenarioInitialize(scenarioInfo);
                         "4"});
             table4.AddRow(new string[] {
                         "Buzz"});
-            table4.AddRow(new string[] {
-                        "Fizz"});
-            table4.AddRow(new string[] {
-                        "7"});
-            table4.AddRow(new string[] {
-                        "8"});
-            table4.AddRow(new string[] {
-                        "Fizz"});
-            table4.AddRow(new string[] {
-                        "Buzz"});
-            table4.AddRow(new string[] {
-                        "11"});
-            table4.AddRow(new string[] {
-                        "Fizz"});
-            table4.AddRow(new string[] {
-                        "13"});
-            table4.AddRow(new string[] {
-                        "14"});
-            table4.AddRow(new string[] {
-                        "FizzBuzz"});
-#line 35
+#line 32
  testRunner.Then("結果為", ((string)(null)), table4, "那麼");
+#line hidden
+            this.ScenarioCleanup();
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("呼叫GetResult方法並傳入15，結果應無長度15的字串集合，三的倍數應為Fizz，五的倍數應為Buzz，滿足兩者應為FizzBuzz")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "FizzBuzzLibTests")]
+        public virtual void 呼叫GetResult方法並傳入15結果應無長度15的字串集合三的倍數應為Fizz五的倍數應為Buzz滿足兩者應為FizzBuzz()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("呼叫GetResult方法並傳入15，結果應無長度15的字串集合，三的倍數應為Fizz，五的倍數應為Buzz，滿足兩者應為FizzBuzz", null, ((string[])(null)));
+#line 40
+this.ScenarioInitialize(scenarioInfo);
+            this.ScenarioStart();
+#line 41
+ testRunner.Given("陣列長度輸入 15", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "假設");
+#line 42
+ testRunner.When("呼叫GetResult方法", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "當");
+#line hidden
+            TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                        "value"});
+            table5.AddRow(new string[] {
+                        "1"});
+            table5.AddRow(new string[] {
+                        "2"});
+            table5.AddRow(new string[] {
+                        "Fizz"});
+            table5.AddRow(new string[] {
+                        "4"});
+            table5.AddRow(new string[] {
+                        "Buzz"});
+            table5.AddRow(new string[] {
+                        "Fizz"});
+            table5.AddRow(new string[] {
+                        "7"});
+            table5.AddRow(new string[] {
+                        "8"});
+            table5.AddRow(new string[] {
+                        "Fizz"});
+            table5.AddRow(new string[] {
+                        "Buzz"});
+            table5.AddRow(new string[] {
+                        "11"});
+            table5.AddRow(new string[] {
+                        "Fizz"});
+            table5.AddRow(new string[] {
+                        "13"});
+            table5.AddRow(new string[] {
+                        "14"});
+            table5.AddRow(new string[] {
+                        "FizzBuzz"});
+#line 43
+ testRunner.Then("結果為", ((string)(null)), table5, "那麼");
 #line hidden
             this.ScenarioCleanup();
         }
